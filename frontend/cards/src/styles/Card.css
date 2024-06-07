@@ -1,0 +1,44 @@
+/* ContactCard.css */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 300px;
+    margin: 16px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+}
+
+.title {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.email,
+.phone {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #007BFF;
+}
+
+.email a,
+.phone a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.email a:hover,
+.phone a:hover {
+    text-decoration: underline;
+}
