@@ -6,9 +6,14 @@ import Suma from './components/Suma';
 import Suma2 from './components/Suma2';
 import Eventos from './components/Eventos';
 import Contador from './components/Contador';
+import FormularioSimple from './components/FormularioSimple';
+import Formulario from './components/Formulario';
 
 function App() {
 
+  const handleEnviaData = (data) => {
+    console.log(data);
+  }
   const handleSumaResuelta = (resultado) => {
     console.log(`Se ha resuelto la suma con resultado: ${resultado}`)
   }
@@ -32,6 +37,8 @@ function App() {
             sumaResuelta={handleSumaResuelta}
           />
           <Contador informaResultado={handleInformaResultado} />
+          <FormularioSimple />
+          <Formulario enviaData={handleEnviaData} />
     </div>
   )
 }
