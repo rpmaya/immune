@@ -7,6 +7,10 @@ const Contador = ({ informaResultado }) => {
     const handleClick = () => {
         setNumero(numero + 1);
     }
+
+    const inform = () => {
+        informaResultado(numero)
+    }
     
     return (
         <>

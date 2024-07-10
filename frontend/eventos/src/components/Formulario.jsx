@@ -1,5 +1,7 @@
 import { useState } from "react";
-const Formulario = ({ enviaData }) => {
+
+
+export default function Formulario ({ enviaData }) {
     const [data, setData] = useState({
         nombre: '',
         apellidos: '',
@@ -35,4 +37,4 @@ const Formulario = ({ enviaData }) => {
         <button onClick={handleClick}>Enviar</button>
     </div>;
 }
-export default Formulario;
+//export default Formulario;

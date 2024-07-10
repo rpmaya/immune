@@ -1,7 +1,9 @@
 import { useState } from "react";
 
-const Suma2 = ({ numA, numB, sumaResuelta }) => {
+function Suma2 ( { numA, numB, sumaResuelta } ) {
+
     const [resultado, setResultado] = useState(0);
+    
     const handleClick = () => {
         const resultado = numA + numB;
         setResultado(resultado);

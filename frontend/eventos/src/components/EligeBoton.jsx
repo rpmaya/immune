@@ -1,6 +1,9 @@
 import { useState } from "react";
-const EligeBoton = () => {
+
+function EligeBoton() {
+
     const [mensaje, setMensaje] = useState('');
+
     const handleClick = (num) => {
         setMensaje(`Has elegido el botón ${num}`);
     }

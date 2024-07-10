@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import BotonSimple from './components/BotonSimple';
 import EligeBoton from './components/EligeBoton';
@@ -6,6 +6,7 @@ import Suma from './components/Suma';
 import Suma2 from './components/Suma2';
 import Eventos from './components/Eventos';
 import Contador from './components/Contador';
+
 import FormularioSimple from './components/FormularioSimple';
 import Formulario from './components/Formulario';
 
@@ -14,6 +15,7 @@ function App() {
   const handleEnviaData = (data) => {
     console.log(data);
   }
+  /*
   const handleSumaResuelta = (resultado) => {
     console.log(`Se ha resuelto la suma con resultado: ${resultado}`)
   }
@@ -21,9 +23,10 @@ function App() {
   const handleInformaResultado = (resultado) => {
     console.log(`El contador tiene un valor de ${resultado}`)
   }
-
+  */
   return (
     <div className="App">
+      {/*
           <BotonSimple />
           <EligeBoton />
           <Suma 
@@ -31,6 +34,7 @@ function App() {
             numB={10}
           />
           <Eventos />
+           
           <Suma2 
             numA={5}
             numB={11}
@@ -38,7 +42,10 @@ function App() {
           />
           <Contador informaResultado={handleInformaResultado} />
           <FormularioSimple />
+  */}
+  
           <Formulario enviaData={handleEnviaData} />
+
     </div>
   )
 }

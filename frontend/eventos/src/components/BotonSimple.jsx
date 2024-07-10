@@ -1,4 +1,4 @@
-const BotonSimple = () => {
+function BotonSimple () {
     const handleClick = (event) => {
         console.log('Botón pulsado', event);
     }

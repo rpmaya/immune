@@ -24,8 +24,7 @@ function App() {
         email="ricardo.palacios@immune.com"
         phone="(098) 745-4331"
       />
+      <Saludo name = "Luis"/>
     </div>
   );
 }
-
-export default App;

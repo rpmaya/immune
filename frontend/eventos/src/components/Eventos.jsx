@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Eventos = () => {
+function Eventos() {
 
     const [text, setText] = useState('');
     const [rango, setRango] = useState(0);
@@ -25,14 +25,16 @@ const Eventos = () => {
     return (
         <>
             <h2>Eventos</h2>
-            <div className="campo-texto">
+            <div>
                 <p>El valor del campo de texto es: {text}</p>
                 <input type="text" onInput={onChangeInput} />
             </div>
-            <div className="rango">
+
+            <div>
                 <p>El valor del rango es: {rango}</p>
                 <input type="range" min="1" max="100" step="1" onChange={onChangeRange} />
-            </div>
+             </div>
+
             <div style={{
                 textAlign: 'center',
                 width: '200px',

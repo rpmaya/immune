@@ -1,7 +1,12 @@
 import './App.css';
 import Ticks from './components/Ticks'
+import Login from './components/Login'
+import Saludo from './components/Saludo'
+import Texto from './components/Texto'
+import Animales from './components/Animales'
 
 function App() {
+  /*
   //const nombre = 'Ricardo Palacios'
   const usuario = {
     nombre: 'Mario',
@@ -18,15 +23,20 @@ function App() {
   const saludar = (persona) => {
     return (persona) ? <h1>Hola {nombreCompleto(persona)}</h1> : <h1>Hola desconocido</h1>
   }
-
+  */
   return (
     <div className="App">
+      {/*
       {saludar(persona1)}
       {saludar()}
       <p style={{ backgroundColor: 'red', color: 'white' }}>Párrafo con estilos</p>
       <img src={usuario.avatar} style={{width: '200px', height: '200px'}} alt="avatar"/>
       <Ticks titulo="Hora" />
       <Ticks titulo="Time" />
+       */}
+      <Saludo name = "Ricardo" />
+      <Texto>este es mi texto</Texto>
+      <Animales />
     </div>
   );
 }
