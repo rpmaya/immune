@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from pyspark import SparkConf, SparkContext
 from pyspark.streaming import StreamingContext
 import re
@@ -15,7 +17,7 @@ def main():
     ssc = StreamingContext(sc, 5)
 
     # Crear un DStream que conecte a un host y puerto especificado
-    lines = ssc.socketTextStream("localhost", 9999)
+    lines = ssc.socketTextStream("192.168.1.34", 9999)
 
     # Splitear las líneas en palabras
     words = lines.flatMap(lambda line: line.split(" "))
